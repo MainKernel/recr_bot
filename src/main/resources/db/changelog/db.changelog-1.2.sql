@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS news(
+    id BIGSERIAL PRIMARY KEY,
+    news_title VARCHAR(512),
+    news_text TEXT,
+    publisher VARCHAR(64),
+    news_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

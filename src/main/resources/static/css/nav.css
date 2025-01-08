@@ -1,0 +1,123 @@
+/************************ NAV MENU ******************************************/
+#nav-grid{
+    display: grid;
+    grid-template-columns: 3fr 10fr 3fr;
+    grid-template-rows: 1fr;
+
+}
+
+.logo-rc-nav{
+    padding-left: 1rem;
+}
+.logo-rc-nav:hover{
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    transition: all 0.3s ease-in-out;
+}
+
+.a-nav {
+
+    text-decoration: none;
+    text-align: center;
+
+    font-weight: 900;
+    font-size: medium;
+    font-family: "Gideon Roman", serif;
+
+    color: rgb(255, 255, 255);
+}
+
+#nav-bar{
+    background-color: #616C42;
+}
+
+.nav {
+    border: 2px solid black;
+    border-radius: 3rem;
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+    background-color: #606e37;
+
+    padding: 10px;
+
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.514);
+}
+
+.nav:hover {
+    background-color: #4e5c24;
+    box-shadow: none;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    transition: all 0.3s ease-in-out;
+}
+
+.a-nav:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+}
+
+#logo-nav-menu{
+    width: 13em;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    align-self: center;
+    
+    justify-content: start;
+    
+
+}
+
+#nav-buttons-row {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    margin: 0px;
+    padding: 5px;
+    
+}
+
+#exit-button-holder{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: end; /* Center horizontally */
+    height: 100%; /* Ensure the parent has a height */
+    padding-right: 10px;
+}
+
+#exit-icon{
+    height: 2rem; /* Adjust as necessary */
+    width: auto; /* Keep proportions */
+}
+
+#exit-link{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    padding-top: 2px ;
+    padding-bottom: 2px;
+}
+
+#exit-logo{
+    width: 4rem;
+    background-color:  #606e37;
+    filter: blur(3px);
+}
+
+#exit-logo:hover{
+    background-color: #4e5c24;
+    box-shadow: none;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    transition: all 0.3s ease-in-out;
+    filter: blur(0px);
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+/************************ NAV MENU ******************************************/

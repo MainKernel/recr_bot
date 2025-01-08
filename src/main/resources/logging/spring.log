@@ -1,0 +1,453 @@
+2025-01-08T08:58:23.415+02:00  INFO 470432 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : Starting RecrbotApplication using Java 21.0.5 with PID 470432 (/home/mightyloot/IdeaProjects/recrbot/build/classes/java/main started by mightyloot in /home/mightyloot/IdeaProjects/recrbot)
+2025-01-08T08:58:23.423+02:00  INFO 470432 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-01-08T08:58:23.888+02:00  INFO 470432 --- [recrbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08T08:58:23.938+02:00  INFO 470432 --- [recrbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 4 JPA repository interfaces.
+2025-01-08T08:58:24.295+02:00  INFO 470432 --- [recrbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-08T08:58:24.303+02:00  INFO 470432 --- [recrbot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-08T08:58:24.303+02:00  INFO 470432 --- [recrbot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-08T08:58:24.332+02:00  INFO 470432 --- [recrbot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-08T08:58:24.332+02:00  INFO 470432 --- [recrbot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 872 ms
+2025-01-08T08:58:24.612+02:00  INFO 470432 --- [recrbot] [main] liquibase.database                       : Set default schema name to public
+2025-01-08T08:58:24.814+02:00  INFO 470432 --- [recrbot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-01-08T08:58:24.833+02:00  INFO 470432 --- [recrbot] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-01-08T08:58:24.835+02:00  INFO 470432 --- [recrbot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-01-08T08:58:24.840+02:00  INFO 470432 --- [recrbot] [main] liquibase.util                           : UPDATE SUMMARY
+2025-01-08T08:58:24.840+02:00  INFO 470432 --- [recrbot] [main] liquibase.util                           : Run:                          0
+2025-01-08T08:58:24.841+02:00  INFO 470432 --- [recrbot] [main] liquibase.util                           : Previously run:               3
+2025-01-08T08:58:24.841+02:00  INFO 470432 --- [recrbot] [main] liquibase.util                           : Filtered out:                 0
+2025-01-08T08:58:24.841+02:00  INFO 470432 --- [recrbot] [main] liquibase.util                           : -------------------------------
+2025-01-08T08:58:24.841+02:00  INFO 470432 --- [recrbot] [main] liquibase.util                           : Total change sets:            3
+2025-01-08T08:58:24.841+02:00  INFO 470432 --- [recrbot] [main] liquibase.util                           : Update summary generated
+2025-01-08T08:58:24.842+02:00  INFO 470432 --- [recrbot] [main] liquibase.command                        : Command execution complete
+2025-01-08T08:58:24.889+02:00  INFO 470432 --- [recrbot] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-08T08:58:24.919+02:00  INFO 470432 --- [recrbot] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-08T08:58:24.947+02:00  INFO 470432 --- [recrbot] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-08T08:58:25.094+02:00  INFO 470432 --- [recrbot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-08T08:58:25.108+02:00  INFO 470432 --- [recrbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-08T08:58:25.141+02:00  INFO 470432 --- [recrbot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@79424f25
+2025-01-08T08:58:25.143+02:00  INFO 470432 --- [recrbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-08T08:58:25.156+02:00  WARN 470432 --- [recrbot] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-08T08:58:25.167+02:00  INFO 470432 --- [recrbot] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-08T08:58:25.641+02:00  INFO 470432 --- [recrbot] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-08T08:58:25.669+02:00  INFO 470432 --- [recrbot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08T08:58:25.820+02:00  INFO 470432 --- [recrbot] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-01-08T08:58:26.202+02:00  WARN 470432 --- [recrbot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-08T08:58:26.214+02:00  INFO 470432 --- [recrbot] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-01-08T08:58:26.260+02:00  INFO 470432 --- [recrbot] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-01-08T08:58:26.552+02:00  INFO 470432 --- [recrbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-01-08T08:58:26.560+02:00  INFO 470432 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : Started RecrbotApplication in 3.422 seconds (process running for 3.733)
+2025-01-08T08:58:26.564+02:00  INFO 470432 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : Telegram bot service started in background
+2025-01-08T08:58:26.564+02:00  INFO 470432 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : Admin user created
+2025-01-08T08:58:31.615+02:00  INFO 470432 --- [recrbot] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-08T08:59:41.126+02:00  INFO 471177 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : Starting RecrbotApplication using Java 21.0.5 with PID 471177 (/home/mightyloot/IdeaProjects/recrbot/build/classes/java/main started by mightyloot in /home/mightyloot/IdeaProjects/recrbot)
+2025-01-08T08:59:41.130+02:00  INFO 471177 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-01-08T08:59:41.642+02:00  INFO 471177 --- [recrbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08T08:59:41.724+02:00  INFO 471177 --- [recrbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74 ms. Found 4 JPA repository interfaces.
+2025-01-08T08:59:42.085+02:00  INFO 471177 --- [recrbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-08T08:59:42.094+02:00  INFO 471177 --- [recrbot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-08T08:59:42.094+02:00  INFO 471177 --- [recrbot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-08T08:59:42.125+02:00  INFO 471177 --- [recrbot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-08T08:59:42.125+02:00  INFO 471177 --- [recrbot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 968 ms
+2025-01-08T08:59:42.394+02:00  INFO 471177 --- [recrbot] [main] liquibase.database                       : Set default schema name to public
+2025-01-08T08:59:42.603+02:00  INFO 471177 --- [recrbot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-01-08T08:59:42.628+02:00  INFO 471177 --- [recrbot] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-01-08T08:59:42.630+02:00  INFO 471177 --- [recrbot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-01-08T08:59:42.638+02:00  INFO 471177 --- [recrbot] [main] liquibase.util                           : UPDATE SUMMARY
+2025-01-08T08:59:42.638+02:00  INFO 471177 --- [recrbot] [main] liquibase.util                           : Run:                          0
+2025-01-08T08:59:42.638+02:00  INFO 471177 --- [recrbot] [main] liquibase.util                           : Previously run:               3
+2025-01-08T08:59:42.638+02:00  INFO 471177 --- [recrbot] [main] liquibase.util                           : Filtered out:                 0
+2025-01-08T08:59:42.638+02:00  INFO 471177 --- [recrbot] [main] liquibase.util                           : -------------------------------
+2025-01-08T08:59:42.638+02:00  INFO 471177 --- [recrbot] [main] liquibase.util                           : Total change sets:            3
+2025-01-08T08:59:42.639+02:00  INFO 471177 --- [recrbot] [main] liquibase.util                           : Update summary generated
+2025-01-08T08:59:42.639+02:00  INFO 471177 --- [recrbot] [main] liquibase.command                        : Command execution complete
+2025-01-08T08:59:42.700+02:00  INFO 471177 --- [recrbot] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-08T08:59:42.727+02:00  INFO 471177 --- [recrbot] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-08T08:59:42.745+02:00  INFO 471177 --- [recrbot] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-08T08:59:42.884+02:00  INFO 471177 --- [recrbot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-08T08:59:42.898+02:00  INFO 471177 --- [recrbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-08T08:59:42.930+02:00  INFO 471177 --- [recrbot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5a537a16
+2025-01-08T08:59:42.932+02:00  INFO 471177 --- [recrbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-08T08:59:42.945+02:00  WARN 471177 --- [recrbot] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-08T08:59:42.957+02:00  INFO 471177 --- [recrbot] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-08T08:59:43.466+02:00  INFO 471177 --- [recrbot] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-08T08:59:43.493+02:00  INFO 471177 --- [recrbot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08T08:59:43.653+02:00  INFO 471177 --- [recrbot] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-01-08T08:59:44.066+02:00  WARN 471177 --- [recrbot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-08T08:59:44.078+02:00  INFO 471177 --- [recrbot] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-01-08T08:59:44.121+02:00  INFO 471177 --- [recrbot] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-01-08T08:59:44.406+02:00  INFO 471177 --- [recrbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-01-08T08:59:44.412+02:00  INFO 471177 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : Started RecrbotApplication in 3.616 seconds (process running for 3.904)
+2025-01-08T08:59:44.416+02:00  INFO 471177 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : Telegram bot service started in background
+2025-01-08T08:59:44.417+02:00  INFO 471177 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : Admin user created
+2025-01-08T08:59:46.050+02:00  INFO 471177 --- [recrbot] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-08T09:00:32.257+02:00  INFO 471748 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : Starting RecrbotApplication using Java 21.0.5 with PID 471748 (/home/mightyloot/IdeaProjects/recrbot/build/classes/java/main started by mightyloot in /home/mightyloot/IdeaProjects/recrbot)
+2025-01-08T09:00:32.259+02:00  INFO 471748 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-01-08T09:00:32.792+02:00  INFO 471748 --- [recrbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08T09:00:32.850+02:00  INFO 471748 --- [recrbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50 ms. Found 4 JPA repository interfaces.
+2025-01-08T09:00:33.280+02:00  INFO 471748 --- [recrbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-08T09:00:33.291+02:00  INFO 471748 --- [recrbot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-08T09:00:33.291+02:00  INFO 471748 --- [recrbot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-08T09:00:33.323+02:00  INFO 471748 --- [recrbot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-08T09:00:33.324+02:00  INFO 471748 --- [recrbot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1026 ms
+2025-01-08T09:00:33.694+02:00  INFO 471748 --- [recrbot] [main] liquibase.database                       : Set default schema name to public
+2025-01-08T09:00:33.940+02:00  INFO 471748 --- [recrbot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-01-08T09:00:33.963+02:00  INFO 471748 --- [recrbot] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-01-08T09:00:33.965+02:00  INFO 471748 --- [recrbot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-01-08T09:00:33.971+02:00  INFO 471748 --- [recrbot] [main] liquibase.util                           : UPDATE SUMMARY
+2025-01-08T09:00:33.971+02:00  INFO 471748 --- [recrbot] [main] liquibase.util                           : Run:                          0
+2025-01-08T09:00:33.971+02:00  INFO 471748 --- [recrbot] [main] liquibase.util                           : Previously run:               3
+2025-01-08T09:00:33.971+02:00  INFO 471748 --- [recrbot] [main] liquibase.util                           : Filtered out:                 0
+2025-01-08T09:00:33.971+02:00  INFO 471748 --- [recrbot] [main] liquibase.util                           : -------------------------------
+2025-01-08T09:00:33.971+02:00  INFO 471748 --- [recrbot] [main] liquibase.util                           : Total change sets:            3
+2025-01-08T09:00:33.972+02:00  INFO 471748 --- [recrbot] [main] liquibase.util                           : Update summary generated
+2025-01-08T09:00:33.972+02:00  INFO 471748 --- [recrbot] [main] liquibase.command                        : Command execution complete
+2025-01-08T09:00:34.023+02:00  INFO 471748 --- [recrbot] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-08T09:00:34.048+02:00  INFO 471748 --- [recrbot] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-08T09:00:34.065+02:00  INFO 471748 --- [recrbot] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-08T09:00:34.229+02:00  INFO 471748 --- [recrbot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-08T09:00:34.245+02:00  INFO 471748 --- [recrbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-08T09:00:34.280+02:00  INFO 471748 --- [recrbot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@36453773
+2025-01-08T09:00:34.282+02:00  INFO 471748 --- [recrbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-08T09:00:34.303+02:00  WARN 471748 --- [recrbot] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-08T09:00:34.318+02:00  INFO 471748 --- [recrbot] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-08T09:00:34.856+02:00  INFO 471748 --- [recrbot] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-08T09:00:34.885+02:00  INFO 471748 --- [recrbot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08T09:00:35.070+02:00  INFO 471748 --- [recrbot] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-01-08T09:00:35.553+02:00  WARN 471748 --- [recrbot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-08T09:00:35.570+02:00  INFO 471748 --- [recrbot] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-01-08T09:00:35.631+02:00  INFO 471748 --- [recrbot] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-01-08T09:00:35.943+02:00  INFO 471748 --- [recrbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-01-08T09:00:35.949+02:00  INFO 471748 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : Started RecrbotApplication in 4.032 seconds (process running for 4.313)
+2025-01-08T09:00:35.954+02:00  INFO 471748 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : Telegram bot service started in background
+2025-01-08T09:00:35.954+02:00  INFO 471748 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : Admin user created
+2025-01-08T09:00:36.134+02:00  INFO 471748 --- [recrbot] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-08T09:02:50.970+02:00  INFO 472864 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : Starting RecrbotApplication using Java 21.0.5 with PID 472864 (/home/mightyloot/IdeaProjects/recrbot/build/classes/java/main started by mightyloot in /home/mightyloot/IdeaProjects/recrbot)
+2025-01-08T09:02:50.971+02:00  INFO 472864 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-01-08T09:02:51.429+02:00  INFO 472864 --- [recrbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08T09:02:51.478+02:00  INFO 472864 --- [recrbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 4 JPA repository interfaces.
+2025-01-08T09:02:51.869+02:00  INFO 472864 --- [recrbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-08T09:02:51.878+02:00  INFO 472864 --- [recrbot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-08T09:02:51.878+02:00  INFO 472864 --- [recrbot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-08T09:02:51.909+02:00  INFO 472864 --- [recrbot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-08T09:02:51.910+02:00  INFO 472864 --- [recrbot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 907 ms
+2025-01-08T09:02:52.167+02:00  INFO 472864 --- [recrbot] [main] liquibase.database                       : Set default schema name to public
+2025-01-08T09:02:52.392+02:00  INFO 472864 --- [recrbot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-01-08T09:02:52.422+02:00  INFO 472864 --- [recrbot] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-01-08T09:02:52.424+02:00  INFO 472864 --- [recrbot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-01-08T09:02:52.430+02:00  INFO 472864 --- [recrbot] [main] liquibase.util                           : UPDATE SUMMARY
+2025-01-08T09:02:52.430+02:00  INFO 472864 --- [recrbot] [main] liquibase.util                           : Run:                          0
+2025-01-08T09:02:52.430+02:00  INFO 472864 --- [recrbot] [main] liquibase.util                           : Previously run:               3
+2025-01-08T09:02:52.430+02:00  INFO 472864 --- [recrbot] [main] liquibase.util                           : Filtered out:                 0
+2025-01-08T09:02:52.430+02:00  INFO 472864 --- [recrbot] [main] liquibase.util                           : -------------------------------
+2025-01-08T09:02:52.430+02:00  INFO 472864 --- [recrbot] [main] liquibase.util                           : Total change sets:            3
+2025-01-08T09:02:52.431+02:00  INFO 472864 --- [recrbot] [main] liquibase.util                           : Update summary generated
+2025-01-08T09:02:52.431+02:00  INFO 472864 --- [recrbot] [main] liquibase.command                        : Command execution complete
+2025-01-08T09:02:52.484+02:00  INFO 472864 --- [recrbot] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-08T09:02:52.515+02:00  INFO 472864 --- [recrbot] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-08T09:02:52.532+02:00  INFO 472864 --- [recrbot] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-08T09:02:52.665+02:00  INFO 472864 --- [recrbot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-08T09:02:52.679+02:00  INFO 472864 --- [recrbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-08T09:02:52.712+02:00  INFO 472864 --- [recrbot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@13ebccd
+2025-01-08T09:02:52.713+02:00  INFO 472864 --- [recrbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-08T09:02:52.727+02:00  WARN 472864 --- [recrbot] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-08T09:02:52.737+02:00  INFO 472864 --- [recrbot] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-08T09:02:53.188+02:00  INFO 472864 --- [recrbot] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-08T09:02:53.217+02:00  INFO 472864 --- [recrbot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08T09:02:53.374+02:00  INFO 472864 --- [recrbot] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-01-08T09:02:53.776+02:00  WARN 472864 --- [recrbot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-08T09:02:53.789+02:00  INFO 472864 --- [recrbot] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-01-08T09:02:53.833+02:00  INFO 472864 --- [recrbot] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-01-08T09:02:54.182+02:00  WARN 472864 --- [recrbot] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-01-08T09:02:54.184+02:00  INFO 472864 --- [recrbot] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08T09:02:54.185+02:00  INFO 472864 --- [recrbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-08T09:02:54.187+02:00  INFO 472864 --- [recrbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-08T09:02:54.196+02:00  INFO 472864 --- [recrbot] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-01-08T09:02:54.211+02:00 ERROR 472864 --- [recrbot] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-01-08T09:03:06.784+02:00  INFO 473238 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : Starting RecrbotApplication using Java 21.0.5 with PID 473238 (/home/mightyloot/IdeaProjects/recrbot/build/classes/java/main started by mightyloot in /home/mightyloot/IdeaProjects/recrbot)
+2025-01-08T09:03:06.786+02:00  INFO 473238 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-01-08T09:03:07.271+02:00  INFO 473238 --- [recrbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08T09:03:07.314+02:00  INFO 473238 --- [recrbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 4 JPA repository interfaces.
+2025-01-08T09:03:07.673+02:00  INFO 473238 --- [recrbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-08T09:03:07.682+02:00  INFO 473238 --- [recrbot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-08T09:03:07.682+02:00  INFO 473238 --- [recrbot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-08T09:03:07.719+02:00  INFO 473238 --- [recrbot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-08T09:03:07.719+02:00  INFO 473238 --- [recrbot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 895 ms
+2025-01-08T09:03:08.041+02:00  INFO 473238 --- [recrbot] [main] liquibase.database                       : Set default schema name to public
+2025-01-08T09:03:08.319+02:00  INFO 473238 --- [recrbot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-01-08T09:03:08.341+02:00  INFO 473238 --- [recrbot] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-01-08T09:03:08.343+02:00  INFO 473238 --- [recrbot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-01-08T09:03:08.349+02:00  INFO 473238 --- [recrbot] [main] liquibase.util                           : UPDATE SUMMARY
+2025-01-08T09:03:08.350+02:00  INFO 473238 --- [recrbot] [main] liquibase.util                           : Run:                          0
+2025-01-08T09:03:08.350+02:00  INFO 473238 --- [recrbot] [main] liquibase.util                           : Previously run:               3
+2025-01-08T09:03:08.350+02:00  INFO 473238 --- [recrbot] [main] liquibase.util                           : Filtered out:                 0
+2025-01-08T09:03:08.350+02:00  INFO 473238 --- [recrbot] [main] liquibase.util                           : -------------------------------
+2025-01-08T09:03:08.350+02:00  INFO 473238 --- [recrbot] [main] liquibase.util                           : Total change sets:            3
+2025-01-08T09:03:08.350+02:00  INFO 473238 --- [recrbot] [main] liquibase.util                           : Update summary generated
+2025-01-08T09:03:08.351+02:00  INFO 473238 --- [recrbot] [main] liquibase.command                        : Command execution complete
+2025-01-08T09:03:08.407+02:00  INFO 473238 --- [recrbot] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-08T09:03:08.432+02:00  INFO 473238 --- [recrbot] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-08T09:03:08.450+02:00  INFO 473238 --- [recrbot] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-08T09:03:08.586+02:00  INFO 473238 --- [recrbot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-08T09:03:08.601+02:00  INFO 473238 --- [recrbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-08T09:03:08.656+02:00  INFO 473238 --- [recrbot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@24cbf894
+2025-01-08T09:03:08.657+02:00  INFO 473238 --- [recrbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-08T09:03:08.676+02:00  WARN 473238 --- [recrbot] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-08T09:03:08.691+02:00  INFO 473238 --- [recrbot] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-08T09:03:09.223+02:00  INFO 473238 --- [recrbot] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-08T09:03:09.251+02:00  INFO 473238 --- [recrbot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08T09:03:09.464+02:00  INFO 473238 --- [recrbot] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-01-08T09:03:09.973+02:00  WARN 473238 --- [recrbot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-08T09:03:09.994+02:00  INFO 473238 --- [recrbot] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-01-08T09:03:10.062+02:00  INFO 473238 --- [recrbot] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-01-08T09:03:10.504+02:00  INFO 473238 --- [recrbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-01-08T09:03:10.514+02:00  INFO 473238 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : Started RecrbotApplication in 4.062 seconds (process running for 4.347)
+2025-01-08T09:03:10.520+02:00  INFO 473238 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : Telegram bot service started in background
+2025-01-08T09:03:10.520+02:00  INFO 473238 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : Admin user created
+2025-01-08T09:03:11.712+02:00  INFO 473238 --- [recrbot] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-08T09:09:06.144+02:00  INFO 475525 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : Starting RecrbotApplication using Java 21.0.5 with PID 475525 (/home/mightyloot/IdeaProjects/recrbot/build/classes/java/main started by mightyloot in /home/mightyloot/IdeaProjects/recrbot)
+2025-01-08T09:09:06.146+02:00  INFO 475525 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-01-08T09:09:06.724+02:00  INFO 475525 --- [recrbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08T09:09:06.783+02:00  INFO 475525 --- [recrbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 4 JPA repository interfaces.
+2025-01-08T09:09:07.164+02:00  INFO 475525 --- [recrbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-08T09:09:07.177+02:00  INFO 475525 --- [recrbot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-08T09:09:07.178+02:00  INFO 475525 --- [recrbot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-08T09:09:07.221+02:00  INFO 475525 --- [recrbot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-08T09:09:07.222+02:00  INFO 475525 --- [recrbot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1036 ms
+2025-01-08T09:09:07.578+02:00  INFO 475525 --- [recrbot] [main] liquibase.database                       : Set default schema name to public
+2025-01-08T09:09:07.810+02:00  INFO 475525 --- [recrbot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-01-08T09:09:07.831+02:00  INFO 475525 --- [recrbot] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-01-08T09:09:07.833+02:00  INFO 475525 --- [recrbot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-01-08T09:09:07.840+02:00  INFO 475525 --- [recrbot] [main] liquibase.util                           : UPDATE SUMMARY
+2025-01-08T09:09:07.841+02:00  INFO 475525 --- [recrbot] [main] liquibase.util                           : Run:                          0
+2025-01-08T09:09:07.841+02:00  INFO 475525 --- [recrbot] [main] liquibase.util                           : Previously run:               3
+2025-01-08T09:09:07.841+02:00  INFO 475525 --- [recrbot] [main] liquibase.util                           : Filtered out:                 0
+2025-01-08T09:09:07.841+02:00  INFO 475525 --- [recrbot] [main] liquibase.util                           : -------------------------------
+2025-01-08T09:09:07.841+02:00  INFO 475525 --- [recrbot] [main] liquibase.util                           : Total change sets:            3
+2025-01-08T09:09:07.842+02:00  INFO 475525 --- [recrbot] [main] liquibase.util                           : Update summary generated
+2025-01-08T09:09:07.843+02:00  INFO 475525 --- [recrbot] [main] liquibase.command                        : Command execution complete
+2025-01-08T09:09:07.912+02:00  INFO 475525 --- [recrbot] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-08T09:09:07.948+02:00  INFO 475525 --- [recrbot] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-08T09:09:07.973+02:00  INFO 475525 --- [recrbot] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-08T09:09:08.111+02:00  INFO 475525 --- [recrbot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-08T09:09:08.126+02:00  INFO 475525 --- [recrbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-08T09:09:08.162+02:00  INFO 475525 --- [recrbot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@13ebccd
+2025-01-08T09:09:08.163+02:00  INFO 475525 --- [recrbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-08T09:09:08.176+02:00  WARN 475525 --- [recrbot] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-08T09:09:08.187+02:00  INFO 475525 --- [recrbot] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-08T09:09:08.679+02:00  INFO 475525 --- [recrbot] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-08T09:09:08.705+02:00  INFO 475525 --- [recrbot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08T09:09:08.855+02:00  INFO 475525 --- [recrbot] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-01-08T09:09:09.237+02:00  WARN 475525 --- [recrbot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-08T09:09:09.256+02:00  INFO 475525 --- [recrbot] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-01-08T09:09:09.315+02:00  INFO 475525 --- [recrbot] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-01-08T09:09:09.632+02:00  INFO 475525 --- [recrbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-01-08T09:09:09.641+02:00  INFO 475525 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : Started RecrbotApplication in 3.829 seconds (process running for 4.126)
+2025-01-08T09:09:09.647+02:00  INFO 475525 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : Telegram bot service started in background
+2025-01-08T09:09:09.647+02:00  INFO 475525 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : Admin user created
+2025-01-08T09:09:15.466+02:00  INFO 475525 --- [recrbot] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-08T09:11:16.447+02:00  INFO 476577 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : Starting RecrbotApplication using Java 21.0.5 with PID 476577 (/home/mightyloot/IdeaProjects/recrbot/build/classes/java/main started by mightyloot in /home/mightyloot/IdeaProjects/recrbot)
+2025-01-08T09:11:16.449+02:00  INFO 476577 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-01-08T09:11:16.928+02:00  INFO 476577 --- [recrbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08T09:11:16.977+02:00  INFO 476577 --- [recrbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 4 JPA repository interfaces.
+2025-01-08T09:11:17.380+02:00  INFO 476577 --- [recrbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-08T09:11:17.392+02:00  INFO 476577 --- [recrbot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-08T09:11:17.393+02:00  INFO 476577 --- [recrbot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-08T09:11:17.429+02:00  INFO 476577 --- [recrbot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-08T09:11:17.429+02:00  INFO 476577 --- [recrbot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 945 ms
+2025-01-08T09:11:17.720+02:00  INFO 476577 --- [recrbot] [main] liquibase.database                       : Set default schema name to public
+2025-01-08T09:11:17.981+02:00  INFO 476577 --- [recrbot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-01-08T09:11:18.004+02:00  INFO 476577 --- [recrbot] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-01-08T09:11:18.006+02:00  INFO 476577 --- [recrbot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-01-08T09:11:18.011+02:00  INFO 476577 --- [recrbot] [main] liquibase.util                           : UPDATE SUMMARY
+2025-01-08T09:11:18.011+02:00  INFO 476577 --- [recrbot] [main] liquibase.util                           : Run:                          0
+2025-01-08T09:11:18.011+02:00  INFO 476577 --- [recrbot] [main] liquibase.util                           : Previously run:               3
+2025-01-08T09:11:18.011+02:00  INFO 476577 --- [recrbot] [main] liquibase.util                           : Filtered out:                 0
+2025-01-08T09:11:18.011+02:00  INFO 476577 --- [recrbot] [main] liquibase.util                           : -------------------------------
+2025-01-08T09:11:18.011+02:00  INFO 476577 --- [recrbot] [main] liquibase.util                           : Total change sets:            3
+2025-01-08T09:11:18.012+02:00  INFO 476577 --- [recrbot] [main] liquibase.util                           : Update summary generated
+2025-01-08T09:11:18.012+02:00  INFO 476577 --- [recrbot] [main] liquibase.command                        : Command execution complete
+2025-01-08T09:11:18.063+02:00  INFO 476577 --- [recrbot] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-08T09:11:18.089+02:00  INFO 476577 --- [recrbot] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-08T09:11:18.107+02:00  INFO 476577 --- [recrbot] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-08T09:11:18.283+02:00  INFO 476577 --- [recrbot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-08T09:11:18.297+02:00  INFO 476577 --- [recrbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-08T09:11:18.330+02:00  INFO 476577 --- [recrbot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5e3cb58e
+2025-01-08T09:11:18.332+02:00  INFO 476577 --- [recrbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-08T09:11:18.344+02:00  WARN 476577 --- [recrbot] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-08T09:11:18.355+02:00  INFO 476577 --- [recrbot] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-08T09:11:18.892+02:00  INFO 476577 --- [recrbot] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-08T09:11:18.918+02:00  INFO 476577 --- [recrbot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08T09:11:19.119+02:00  INFO 476577 --- [recrbot] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-01-08T09:11:19.551+02:00  WARN 476577 --- [recrbot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-08T09:11:19.562+02:00  INFO 476577 --- [recrbot] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-01-08T09:11:19.610+02:00  INFO 476577 --- [recrbot] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-01-08T09:11:19.979+02:00  INFO 476577 --- [recrbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-01-08T09:11:19.989+02:00  INFO 476577 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : Started RecrbotApplication in 3.84 seconds (process running for 4.146)
+2025-01-08T09:11:19.994+02:00  INFO 476577 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : Telegram bot service started in background
+2025-01-08T09:11:20.003+02:00  INFO 476577 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : Admin user created
+2025-01-08T09:12:06.059+02:00  INFO 476577 --- [recrbot] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-08T09:13:01.948+02:00  INFO 476577 --- [recrbot] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-08T09:13:01.951+02:00  INFO 476577 --- [recrbot] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-01-08T09:13:01.959+02:00  INFO 476577 --- [recrbot] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08T09:13:01.961+02:00  INFO 476577 --- [recrbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-08T09:13:01.963+02:00  INFO 476577 --- [recrbot] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-08T10:02:42.838+02:00  INFO 485350 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : Starting RecrbotApplication using Java 21.0.5 with PID 485350 (/home/mightyloot/IdeaProjects/recrbot/build/classes/java/main started by mightyloot in /home/mightyloot/IdeaProjects/recrbot)
+2025-01-08T10:02:42.839+02:00  INFO 485350 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-01-08T10:02:43.355+02:00  INFO 485350 --- [recrbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08T10:02:43.404+02:00  INFO 485350 --- [recrbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 4 JPA repository interfaces.
+2025-01-08T10:02:43.772+02:00  INFO 485350 --- [recrbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-08T10:02:43.785+02:00  INFO 485350 --- [recrbot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-08T10:02:43.785+02:00  INFO 485350 --- [recrbot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-08T10:02:43.829+02:00  INFO 485350 --- [recrbot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-08T10:02:43.829+02:00  INFO 485350 --- [recrbot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 955 ms
+2025-01-08T10:02:44.195+02:00  INFO 485350 --- [recrbot] [main] liquibase.database                       : Set default schema name to public
+2025-01-08T10:02:44.438+02:00  INFO 485350 --- [recrbot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-01-08T10:02:44.460+02:00  INFO 485350 --- [recrbot] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-01-08T10:02:44.462+02:00  INFO 485350 --- [recrbot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-01-08T10:02:44.469+02:00  INFO 485350 --- [recrbot] [main] liquibase.util                           : UPDATE SUMMARY
+2025-01-08T10:02:44.469+02:00  INFO 485350 --- [recrbot] [main] liquibase.util                           : Run:                          0
+2025-01-08T10:02:44.470+02:00  INFO 485350 --- [recrbot] [main] liquibase.util                           : Previously run:               3
+2025-01-08T10:02:44.470+02:00  INFO 485350 --- [recrbot] [main] liquibase.util                           : Filtered out:                 0
+2025-01-08T10:02:44.470+02:00  INFO 485350 --- [recrbot] [main] liquibase.util                           : -------------------------------
+2025-01-08T10:02:44.470+02:00  INFO 485350 --- [recrbot] [main] liquibase.util                           : Total change sets:            3
+2025-01-08T10:02:44.471+02:00  INFO 485350 --- [recrbot] [main] liquibase.util                           : Update summary generated
+2025-01-08T10:02:44.471+02:00  INFO 485350 --- [recrbot] [main] liquibase.command                        : Command execution complete
+2025-01-08T10:02:44.523+02:00  INFO 485350 --- [recrbot] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-08T10:02:44.554+02:00  INFO 485350 --- [recrbot] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-08T10:02:44.571+02:00  INFO 485350 --- [recrbot] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-08T10:02:44.711+02:00  INFO 485350 --- [recrbot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-08T10:02:44.726+02:00  INFO 485350 --- [recrbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-08T10:02:44.740+02:00  INFO 485350 --- [recrbot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5bccef9f
+2025-01-08T10:02:44.741+02:00  INFO 485350 --- [recrbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-08T10:02:44.756+02:00  WARN 485350 --- [recrbot] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-08T10:02:44.767+02:00  INFO 485350 --- [recrbot] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-08T10:02:45.337+02:00  INFO 485350 --- [recrbot] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-08T10:02:45.379+02:00  INFO 485350 --- [recrbot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08T10:02:45.543+02:00  INFO 485350 --- [recrbot] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-01-08T10:02:46.003+02:00  WARN 485350 --- [recrbot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-08T10:02:46.015+02:00  INFO 485350 --- [recrbot] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-01-08T10:02:46.071+02:00  INFO 485350 --- [recrbot] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-01-08T10:02:46.433+02:00  INFO 485350 --- [recrbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-01-08T10:02:46.444+02:00  INFO 485350 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : Started RecrbotApplication in 3.886 seconds (process running for 4.215)
+2025-01-08T10:02:46.451+02:00  INFO 485350 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : Telegram bot service started in background
+2025-01-08T10:02:46.463+02:00  INFO 485350 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : Admin user created
+2025-01-08T10:02:47.279+02:00  INFO 485350 --- [recrbot] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-08T10:04:04.627+02:00  INFO 486192 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : Starting RecrbotApplication using Java 21.0.5 with PID 486192 (/home/mightyloot/IdeaProjects/recrbot/build/classes/java/main started by mightyloot in /home/mightyloot/IdeaProjects/recrbot)
+2025-01-08T10:04:04.628+02:00  INFO 486192 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-01-08T10:04:05.022+02:00  INFO 486192 --- [recrbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-08T10:04:05.061+02:00  INFO 486192 --- [recrbot] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 34 ms. Found 4 JPA repository interfaces.
+2025-01-08T10:04:05.400+02:00  INFO 486192 --- [recrbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-01-08T10:04:05.409+02:00  INFO 486192 --- [recrbot] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-01-08T10:04:05.409+02:00  INFO 486192 --- [recrbot] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-08T10:04:05.440+02:00  INFO 486192 --- [recrbot] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-01-08T10:04:05.440+02:00  INFO 486192 --- [recrbot] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 788 ms
+2025-01-08T10:04:05.705+02:00  INFO 486192 --- [recrbot] [main] liquibase.database                       : Set default schema name to public
+2025-01-08T10:04:05.912+02:00  INFO 486192 --- [recrbot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-01-08T10:04:05.933+02:00  INFO 486192 --- [recrbot] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2025-01-08T10:04:05.934+02:00  INFO 486192 --- [recrbot] [main] liquibase.changelog                      : Reading from public.databasechangelog
+2025-01-08T10:04:05.939+02:00  INFO 486192 --- [recrbot] [main] liquibase.util                           : UPDATE SUMMARY
+2025-01-08T10:04:05.939+02:00  INFO 486192 --- [recrbot] [main] liquibase.util                           : Run:                          0
+2025-01-08T10:04:05.939+02:00  INFO 486192 --- [recrbot] [main] liquibase.util                           : Previously run:               3
+2025-01-08T10:04:05.939+02:00  INFO 486192 --- [recrbot] [main] liquibase.util                           : Filtered out:                 0
+2025-01-08T10:04:05.939+02:00  INFO 486192 --- [recrbot] [main] liquibase.util                           : -------------------------------
+2025-01-08T10:04:05.939+02:00  INFO 486192 --- [recrbot] [main] liquibase.util                           : Total change sets:            3
+2025-01-08T10:04:05.940+02:00  INFO 486192 --- [recrbot] [main] liquibase.util                           : Update summary generated
+2025-01-08T10:04:05.941+02:00  INFO 486192 --- [recrbot] [main] liquibase.command                        : Command execution complete
+2025-01-08T10:04:05.989+02:00  INFO 486192 --- [recrbot] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-08T10:04:06.014+02:00  INFO 486192 --- [recrbot] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-08T10:04:06.033+02:00  INFO 486192 --- [recrbot] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-08T10:04:06.166+02:00  INFO 486192 --- [recrbot] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-08T10:04:06.181+02:00  INFO 486192 --- [recrbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-08T10:04:06.214+02:00  INFO 486192 --- [recrbot] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6c56fff
+2025-01-08T10:04:06.215+02:00  INFO 486192 --- [recrbot] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-08T10:04:06.230+02:00  WARN 486192 --- [recrbot] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-08T10:04:06.241+02:00  INFO 486192 --- [recrbot] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-08T10:04:06.738+02:00  INFO 486192 --- [recrbot] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-08T10:04:06.768+02:00  INFO 486192 --- [recrbot] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-08T10:04:06.927+02:00  INFO 486192 --- [recrbot] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-01-08T10:04:07.298+02:00  WARN 486192 --- [recrbot] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-08T10:04:07.310+02:00  INFO 486192 --- [recrbot] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-01-08T10:04:07.354+02:00  INFO 486192 --- [recrbot] [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2025-01-08T10:04:07.636+02:00  INFO 486192 --- [recrbot] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-01-08T10:04:07.648+02:00  INFO 486192 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : Started RecrbotApplication in 3.291 seconds (process running for 3.652)
+2025-01-08T10:04:07.654+02:00  INFO 486192 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : Telegram bot service started in background
+2025-01-08T10:04:07.655+02:00  INFO 486192 --- [recrbot] [main] c.recr.bot.recrbot.RecrbotApplication    : Admin user created
+2025-01-08T10:04:12.621+02:00  INFO 486192 --- [recrbot] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'

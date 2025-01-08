@@ -1,0 +1,20 @@
+create table if not exists candidat(
+    id BIGSERIAL PRIMARY KEY,
+    name VARCHAR(128) NOT NULL,
+    phone_number VARCHAR(64) NOT NULL,
+    age int NOT NULL,
+    status VARCHAR(32) NOT NULL,
+    relationship_status VARCHAR(128) NOT NULL,
+    education VARCHAR(64) NOT NULL,
+    profession VARCHAR(128) NOT NULL,
+    work_exp TEXT NOT NULL,
+    military_rank VARCHAR(128) DEFAULT 'відсутнє',
+    combat_action_participant VARCHAR(12) DEFAULT 'відсутній',
+    helth_status VARCHAR(256) NOT NULL,
+    educational_institution VARCHAR(256) NOT NULL,
+    recruter VARCHAR(64),
+    atempt int,
+    chat_id BIGINT,
+    comment TEXT,
+    application_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

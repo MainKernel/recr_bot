@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "telegram.bot.token",
+    "type": "java.lang.String",
+    "description": "Provided telegram bot token"
+  },
+  {
+    "name": "rc.site.url",
+    "type": "java.lang.String",
+    "description": "Url that leads to recruting center site"
+  },
+  {
+    "name": "g.issuer.name",
+    "type": "java.lang.String",
+    "description": "Issuer name for google totp"
+  }
+]}

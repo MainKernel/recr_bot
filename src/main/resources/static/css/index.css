@@ -1,0 +1,26 @@
+/************************ BACKGROUND ******************************************/
+body {
+    background-image: url(../images/main-background.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/************************ BACKGROUND ******************************************/
+
+/*********************** ADD NEWS BUTTON ************************************/
+#news-button{
+  width: 75px;
+  height: 75px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  padding: 2px;
+}
+
+/*********************** ADD NEWS BUTTON ************************************/
+
+/************************ MAIN CONTENT ***************************************/
+
+/************************ MAIN CONTENT ***************************************/
+
+
