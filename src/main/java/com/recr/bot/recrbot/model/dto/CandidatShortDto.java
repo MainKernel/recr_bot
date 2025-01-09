@@ -9,7 +9,6 @@ public class CandidatShortDto {
     private long id;
     private String name;
     private int age;
-    private String status;
     private String profession;
     private int atempt;
     private String recruter;

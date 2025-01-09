@@ -21,8 +21,8 @@ public class AskHelthHandler implements JobApplicationFlowHandler {
             ConcurrentHashMap<Long, CandidatEntity> userData, String state, KeyboardController keyboardController) {
         if (state.equals("ASK_HELTH")) {
             userData.get(chatId).setHelthStatus(message);
-            userState.put(chatId, "ASK_EDUCATION");
-            return new SendMessage(chatId, "Вкажіть ваш сімейний стан.")
+            userState.put(chatId, "ASK_PROFESSION");
+            return new SendMessage(chatId, "Зрозуміло, дякую за інформацію! Яка у вас спеціальність або професійний напрямок?")
                     .replyMarkup(KeyboardController.mainMenu());
         } else if (nextHandler != null) {
             return nextHandler.handle(chatId, message, userState, userData, state, keyboardController);

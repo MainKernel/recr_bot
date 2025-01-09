@@ -24,7 +24,7 @@ public class AskNameHandler implements JobApplicationFlowHandler {
                 if (state.equals("ASK_NAME")) {
                     userData.get(chatId).setName(message);
                     userState.put(chatId, "ASK_AGE");
-                    return new SendMessage(chatId, "Cкільки вам повних років?")
+                    return new SendMessage(chatId, String.format("Дуже приємно, %s! Скільки вам повних років?", userData.get(chatId).getName()))
                             .replyMarkup(KeyboardController.mainMenu());
                 } else if (nextHandler != null) {
                     return nextHandler.handle(chatId, message, userState, userData, state, keyboardController);

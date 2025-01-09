@@ -40,75 +40,10 @@ public class KeyboardController {
                                 });
         }
 
-        public InlineKeyboardMarkup yesNoKeyboard() {
-                return new InlineKeyboardMarkup(
-                                new InlineKeyboardButton[][] {
-                                                new InlineKeyboardButton[] {
-                                                                new InlineKeyboardButton("Так").callbackData("yes")
-                                                },
-                                                new InlineKeyboardButton[] {
-                                                                new InlineKeyboardButton("Ні").callbackData("no")
-                                                }
-                                });
-        }
+        public Keyboard getPhone() {
+                return new ReplyKeyboardMarkup(new KeyboardButton[] {
+                                new KeyboardButton("Надати номер телефону").requestContact(true),
+                });
 
-        public InlineKeyboardMarkup brunchOfServiceKeyboard() {
-                return new InlineKeyboardMarkup(
-                                new InlineKeyboardButton[][] {
-                                                new InlineKeyboardButton[] {
-                                                                new InlineKeyboardButton("ТРО").callbackData("tro"),
-                                                                new InlineKeyboardButton("ССО").callbackData("sso"),
-                                                                new InlineKeyboardButton("ГУР").callbackData("gur")
-
-                                                },
-                                                new InlineKeyboardButton[] {
-                                                                new InlineKeyboardButton("ДШВ").callbackData("dsv"),
-                                                                new InlineKeyboardButton("МП").callbackData("mp"),
-                                                                new InlineKeyboardButton("СВ").callbackData("sv")
-
-                                                },
-                                                new InlineKeyboardButton[] {
-                                                                new InlineKeyboardButton("ВМС").callbackData("vms"),
-                                                                new InlineKeyboardButton("НГУ").callbackData("ngu"),
-                                                                new InlineKeyboardButton("ДПСУ").callbackData("dpsu")
-
-                                                },
-                                                new InlineKeyboardButton[] {
-                                                                new InlineKeyboardButton("ПС").callbackData("ps"),
-                                                                new InlineKeyboardButton("ГШ").callbackData("gh"),
-                                                                new InlineKeyboardButton("МО").callbackData("mo")
-
-                                                },
-                                                new InlineKeyboardButton[] {
-                                                                new InlineKeyboardButton("СилиБС").callbackData("sbs"),
-                                                                new InlineKeyboardButton("СБУ").callbackData("sbu")
-                                                }
-                                });
-        }
-
-        public InlineKeyboardMarkup educationSelectionKeyboard() {
-                return new InlineKeyboardMarkup(
-                                new InlineKeyboardButton[][] {
-                                                new InlineKeyboardButton[] {
-                                                                new InlineKeyboardButton("Вища")
-                                                                                .callbackData("higherEducation")
-                                                },
-                                                new InlineKeyboardButton[] {
-                                                                new InlineKeyboardButton("Середня спеціальна")
-                                                                                .callbackData("specialEducation")
-                                                },
-                                                new InlineKeyboardButton[] {
-                                                                new InlineKeyboardButton("Середня")
-                                                                                .callbackData("mediumEducation")
-                                                }
-                                });
-        }
-
-        public Keyboard getPhone(){
-                return new ReplyKeyboardMarkup( new KeyboardButton[]{
-                        new KeyboardButton("Надати номер телефону").requestContact(true),
-                }
-                );
-                
         }
 }

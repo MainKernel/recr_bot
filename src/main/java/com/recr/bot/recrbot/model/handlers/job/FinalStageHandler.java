@@ -25,10 +25,10 @@ public class FinalStageHandler implements JobApplicationFlowHandler {
         if(state.equals("FINAL_STAGE")){
             userData.get(chatId).setPhoneNumber(message);
             candidatService.saveCandidateJobApplication(userData.get(chatId));
+            String textMessage = String.format("Дякую, %s! Уся необхідна інформація отримана. Ми зв’яжемося з вами найближчим часом. Гарного дня!", userData.get(chatId).getName());
                 userState.remove(chatId);
                 userData.remove(chatId);
-                return new SendMessage(chatId,
-                        "Ваша заявка буде оброблена найближчим часом. Дякуємо за те що звернулись в Центр Рекрутингу Сил ТрО ЗСУ)")
+                return new SendMessage(chatId, textMessage)
                 .replyMarkup(KeyboardController.mainMenu());
 
         } else if (nextHandler != null){

@@ -60,7 +60,6 @@
         <!-- Navigation section end -->
 
         <!-- Candidats cards-->
-
         <div class="container mt-5" style="background-color: #f1eeee;">
             <h1 class="mb-4">Редагування кандидата</h1>
 
@@ -85,80 +84,16 @@
                     <input id="age" type="number" class="form-control" th:field="*{age}" required />
                 </div>
 
-                <!-- Status (MilitaryStatus Enum) -->
-                <div class="form-group">
-                    <label for="status">Статус</label>
-                    <select id="status" class="form-control" th:field="*{status}">
-                        <option th:value="*{status}" th:text="${candidatEntity.status.status}">Обиріть статус</option>
-                        <option th:value="'onDuty'" th:text="'Військовослужбовець'">Військовослужбовець</option>
-                        <option th:value="'leftDuty'" th:text="'СЗЧ'">СЗЧ</option>
-                        <option th:value="'civilian'" th:text="'Цивільний'">Цивільний</option>
-                    </select>
-                </div>
-
-                <!-- Relationship Status -->
-                <div class="form-group">
-                    <label for="relationshipStatus">Сімейний стан</label>
-                    <input id="relationshipStatus" type="text" class="form-control" th:field="*{relationshipStatus}" />
-                </div>
-
-                <!-- Education (Education Enum) -->
-                <div class="form-group">
-                    <label for="education">Освіта</label>
-                    <select id="education" class="form-control" th:field="*{education}">
-                        <option th:value="*{education}" th:text="${candidatEntity.education.title}">Оберіть рівень освіти
-                        </option>
-                        <option value="SPECIAL" th:text="'Середня спеціальна'">Середня спеціальна</option>
-                        <option value="MEDIUM" th:text="'Середня'">Середня</option>
-                        <option value="HIGHER" th:text="'Вища'">Вища</option>
-                    </select>
-                </div>
-
                 <!-- Profession -->
                 <div class="form-group">
                     <label for="profession">Фах</label>
                     <input id="profession" type="text" class="form-control" th:field="*{profession}" />
                 </div>
 
-                <!-- Work Experience -->
-                <div class="form-group">
-                    <label for="workExp">Досвід роботи</label>
-                    <textarea id="workExp" class="form-control" th:field="*{workExp}"></textarea>
-                </div>
-
-                <!-- Military Rank -->
-                <div class="form-group">
-                    <label for="militaryRank">Військове звання</label>
-                    <input id="militaryRank" type="text" class="form-control" th:field="*{militaryRank}" />
-                </div>
-
-                <!-- Educational Institution -->
-                <div class="form-group">
-                    <label for="educationalInstitution">Заклад освіти</label>
-                    <input id="educationalInstitution" type="text" class="form-control"
-                        th:field="*{educationalInstitution}" />
-                </div>
-
-                <!-- Combat Action Participant -->
-                <div class="form-group">
-                    <label for="combatActionParticipant">Статус учасника бойових дій</label>
-                    <select id="combatActionParticipant" class="form-control" th:field="*{combatActionParticipant}">
-                        <option value="Yes" th:selected="${candidatEntity.combatActionParticipant == 'Yes'}">Так
-                        </option>
-                        <option value="No" th:selected="${candidatEntity.combatActionParticipant == 'No'}">Ні</option>
-                    </select>
-                </div>
-
                 <!-- Health Status -->
                 <div class="form-group">
                     <label for="helthStatus">Стан здоров'я</label>
                     <input id="helthStatus" type="text" class="form-control" th:field="*{helthStatus}" />
-                </div>
-
-                <!-- Branch of Service -->
-                <div class="form-group">
-                    <label for="branchOfService">Рід військ</label>
-                    <input id="branchOfService" type="text" class="form-control" th:field="*{branchOfService}" />
                 </div>
 
                 <!-- Comment -->

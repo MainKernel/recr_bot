@@ -22,11 +22,10 @@ public class AskAgeHandler implements JobApplicationFlowHandler {
         if (state.equals("ASK_AGE")) {
             try {
                 userData.get(chatId).setAge(Integer.parseInt(message));
-                userState.put(chatId, "ASK_DUTY");
+                userState.put(chatId, "ASK_HELTH");
                 return new SendMessage(chatId,
-                "Чи перебуваєте ви на військовій службі? Якщо в СЗЧ то обирайте \"Так\"")
-                .replyMarkup(KeyboardController.mainMenu())
-                .replyMarkup(keyboardController.yesNoKeyboard());
+                "Дякую! А як у вас справи зі здоров’ям? Якщо є рішення ВЛК, то вкажіть будь-ласка ще стан здоров'я за рішенням ВЛК")
+                .replyMarkup(KeyboardController.mainMenu());
 
             } catch (NumberFormatException ex) {
                 log.error(ex.getMessage());

@@ -21,7 +21,7 @@ public class StartHandler implements JobApplicationFlowHandler {
             ConcurrentHashMap<Long, CandidatEntity> userData, String state, KeyboardController keyboardController) {
         if (state.equals("START")) {
             userState.put(chatId, "ASK_NAME");
-            return new SendMessage(chatId, "Як до вас можна звертатися?")
+            return new SendMessage(chatId, "Вітаю! Для початку, як вас звати?")
                     .replyMarkup(KeyboardController.mainMenu());
         } else if (nextHandler != null) {
             return nextHandler.handle(chatId, message, userState, userData, state, keyboardController);
