@@ -30,7 +30,8 @@ public class SecurityConfig {
                                                 .hasAnyAuthority("ADMIN", "USER"))
                                 .formLogin(l -> l
                                                 .defaultSuccessUrl("/")
-                                                .loginPage("/login"))
+                                                .loginPage("/login")
+                                                .successForwardUrl("/"))
                                 .build();
         }
 

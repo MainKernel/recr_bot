@@ -17,3 +17,7 @@ G_ISSUER_NAME= applicatio name
 * WEB_PASSWORD= web ui admin username
 * WEB_USERNAME= web ui admin password
 ###### admin user created once when application is start
+
+###### SSL ########################
+* SSL_STORE= path to p12 sertificat
+* SSL_PASSWORD= cert password 
